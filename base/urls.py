@@ -6,7 +6,7 @@ from . import views
 
 
 urlpatterns=[
-    path("",views.index,name="home"),
+    path("/",views.index,name="home"),
     path("custom/",views.panel,name="custom"),
     path("details/<str:pk>/",views.details,name="details"),
     path("add/",views.addproperty,name="add"),
